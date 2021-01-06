@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Manuel Meinen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo">Manuel Meinen</a>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li class="active"><a href="index.html">Home</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/manuel-meinen/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.github.com/ManuelMeinen" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">August, 2020</span>
+									<h1>Advanced Systems Lab</h1>
+									<h3>Elliptic Curve Public Key Generation: Optimizing Big Number Arithmetic in Radix Representations for use in Curve25519</h3>
+								</header>
+								<div class="image main"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Montgomery_curve2.svg/1024px-Montgomery_curve2.svg.png" alt="" /></div>
+								<p>Elliptic Curve Diffie-Hellman Key Exchange (ECDHE) is a popular method for establishing shared secrets using public key cryptography. Curve25519 is widely adopted for ECDHE because of its various advantages like fast modular arithmetic and short but secure public keys. Generally, the public keys generated are ephemeral in nature, and so speed of generation is critical and fast computations are vital.
+									<br>
+									Public key generation using Curve25519 requires arithmetic in the field F<sub>2<sup>255</sup>-19</sub>. Fast arithmetic in this field is commonly done using so-called radix representations, in particular radix-2<sup>51</sup> and radix-2<sup>25.5</sup>.
+									<br>
+									We implemented a public key generation algorithm using Curve25519 and introduced a new radix representation, radix-2<sup>17</sup>. We hypothesized that a higher speedup is achievable using the radix-2<sup>17</sup> representation because of its higher operational intensity as compared to the previously introduced radix representations.
+									<br>
+									In the process of optimizing the radix-2<sup>17</sup> implementation we discussed the various grounds for optimizations and the main challenges we faced. By comparing the speedup of the optimized implementations of the various radix representations, we concluded that our hypothesis holds.
+								</p>
+								<p>
+									Our implementation can be found <a href="https://github.com/ManuelMeinen/ASL-Project">here</a> and a written report can be found <a href="https://github.com/ManuelMeinen/ASL-Project/blob/master/31_report.pdf">here.</a>
+								</p>
+							</section>
+
+							<section>
+								<!-- Authors -->
+								<p>
+									<h3>Authors:</h3>
+									<ul class="icons alt">
+										Robin Burkhard
+										<li><a href="https://github.com/burki-97" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
+										<br>
+										Sabina Fischlin
+										<br>
+										Supraja Sridhara
+										<li><a href="https://github.com/suprajasridhara" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
+										<br>
+										Manuel Meinen
+										<li><a href="https://github.com/ManuelMeinen" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
+								</p>
+								<p>
+									<h3>Supervisors:</h3>
+									
+									Prof. Dr. Markus Püschel
+									</ul>
+								</p>
+							</section>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:m.meinen@gmx.ch">m.meinen@gmx.ch</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/manuel-meinen/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/ManuelMeinen" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Manuel Meinen</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
